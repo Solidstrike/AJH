@@ -1,6 +1,16 @@
 <div class="col-sm-12 sticky-container">
+  <div id="review-anchor">
+    <div id='review-popup'></div>
+  </div>
+  <% if current_user %>
+    <%= link_to 'add a review', new_review_path, remote: true %>
+  <% else %>
+    <%= link_to "add a review", new_user_session_path %>
+  <% end %>
   <div class="float-left">
-    <%= link_to "Propose Project", new_project_path, class: "btn btn-ghost" %>  </div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project-modal">
+  propose a project
+</button>  </div>
   <div class="float-right">
     <a class="btn btn-ghost" href="https://calendly.com/addisonajh/30min">Plan a Meeting?</a>
   </div>
