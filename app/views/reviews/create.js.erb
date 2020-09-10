@@ -1,0 +1,6 @@
+<% if @review.errors.any? %>
+  document.getElementById('review-popup').innerHTML = '<%= j render "form", review: @review %>'
+<% else %>
+  document.getElementById('review-popup').innerHTML = 'thenk you for your review'
+  document.getElementById('review-popup').classList = ''
+<% end %>

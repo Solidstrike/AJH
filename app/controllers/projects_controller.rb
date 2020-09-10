@@ -3,11 +3,12 @@ class ProjectsController < ApplicationController
 
   def index
     @projects = Project.all
-  
+
     @projects = @projects.group_by{ |x| x.starts_at.strftime('%Y')}.sort.reverse
 
-    @projects =  @projects.map { | key , year | [key, year.group_by { |project| project.city }]}  
+    @projects =  @projects.map { | key , year | [key, year.group_by { |project| project.city }]}
     @reviews = Review.all
+    @project = Project.new
     # @markers = @projects.geocoded.map do |project|
     #   {
     #     lat: Project.latitude,
@@ -30,15 +31,20 @@ class ProjectsController < ApplicationController
   def create
     @project = Project.new(strong_params)
     @project.user_id = current_user.id
-
-    if @project.save
-      flash[:notice] = 'Your project has been added'
-      redirect_to project_path(@project)
-    else
-      render :new
-    # @new_project_request = NewProjectRequest.new( @project.user_id, @project)
+    respond_to do |format|
+      if @project.save
+        format.html do
+          flash[:notice] = 'Your project has been added'
+          redirect_to project_path(@project)
+        end
+        format.js
+      else
+        p @project.errors
+        format.html { render :new }
+        format.js
+      # @new_project_request = NewProjectRequest.new( @project.user_id, @project)
+      end
     end
-
   end
 
   def edit
@@ -75,6 +81,6 @@ class ProjectsController < ApplicationController
   private
 
   def strong_params
-    params.require(:project).permit(:title, :company, :url, :specialty, :employment_type, :headline, :company_description, :job_description, :starts_at, :ends_at, :lat, :lng, :street, :house_number, :house_number_additional, :postcode, :country, :salary, :image_company_logo, :user_id, image: [] )
+    params.require(:project).permit(:title, :company, :url, :specialty, :employment_type, :headline, :company_description, :job_description, :starts_at, :ends_at, :lat, :lng, :street, :house_number, :house_number_additional, :postcode, :country, :salary, :image_company_logo, :user_id, :pay_type, :city, image: [] )
   end
 end
