@@ -23,7 +23,7 @@ user_4 = User.create(first_name: 'Bill', last_name: 'Gates', title: 'CEO', compa
 user_5 = User.create(first_name: 'Steve', last_name: 'Wozniak', title: 'Founder', company:'Apple', email: "wozniak@microsoft.com", password: '123456')
 
 projects = YAML.load_file(Rails.root.join('db/lib/projects.yml')).map(&:deep_symbolize_keys)
-byebug
+
 project = projects[0] ;pro = Project.new(project.merge({user_id: user_1.id}).except(:image, :image_company_logo)); pro.save
 project = projects[1] ;pro = Project.new(project.merge({user_id: user_1.id}).except(:image, :image_company_logo)); pro.save
 project = projects[2] ;pro = Project.new(project.merge({user_id: user_1.id}).except(:image, :image_company_logo)); pro.save

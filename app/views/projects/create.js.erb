@@ -1,0 +1,6 @@
+<% if @project.errors.any? %>
+  document.getElementById('project-form').innerHTML = '<%= j render "form", project: @project %>';
+<% else %>
+  $('#project-modal').modal('hide');
+  $('.modal-backdrop').remove();
+<% end %>

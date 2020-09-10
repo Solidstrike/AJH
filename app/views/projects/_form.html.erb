@@ -1,0 +1,69 @@
+<%= simple_form_for project, url: projects_path, method: :post, remote: true do |f| %>
+  <%= f.error_notification %>
+  <div class="all-new-project">
+    <div class="project-header">
+      <h2><strong>Business Project Proposal</strong></h2>
+    </div>
+    <div class="form-group form-inline col-sm-12 general-info">
+      <div class="col-sm-12 title">
+        <%= f.input :title,  label: "Project Title" %>
+      </div>
+      <div class="col-sm-12 title">
+        <%= f.input :headline, input_html: { class: "headline"} %>
+      </div>
+      <div class="col-sm-12 info-propsal-main">
+        <div class="col-sm-6 info-left">
+          <%= f.input :company,  label: "Company Name" %>
+        </div>
+        <div class="col-sm-6 info-right">
+          <%= f.input :specialty, collection: NewProjectRequest::SPECIALTY, label: "Pay Type" %>
+        </div>
+      </div>
+      <div class="col-sm-12 info-propsal-main">
+        <div class="col-sm-6 info-left">
+          <%= f.input :pay_type, collection: NewProjectRequest::PAY %>
+        </div>
+        <div class="col-sm-6 info-right">
+          <%= f.input :salary, label: "Estimated Budget / Salary" %>
+        </div>
+      </div>
+      <div class="col-sm-12 info-propsal-main">
+        <div class="col-sm-6 info-left">
+          <%= f.input :employment_type, collection: NewProjectRequest::EMPTYPE, label: "Employment Type" %>
+        </div>
+        <div class="col-sm-6 info-right">
+          <%= f.input :url, label: "Company Website" %>
+        </div>
+      </div>
+      <div class="col-sm-12 info-propsal-main">
+        <div class="col-sm-6 info-left">
+          <%= f.input :starts_at, label: "Start Date", as: :date, html5: true %>
+        </div>
+        <div class="col-sm-6 info-right">
+          <%= f.input :ends_at, label: "Expected Completion Date" %>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 text-area">
+      <%= f.input :company_description,  label: "Company Description" %>
+    </div>
+    <div class="col-sm-12 text-area">
+      <%= f.input :job_description, as: :text, input_html: {col: 100, rows:5},  label: "Job Description"  %>
+    </div>
+    <div class="col-sm-12 info-propsal-main">
+      <div class="col-sm-6 info-pic">
+        <%= f.input :image_company_logo, as: :file, label: "Company Logo"%>
+        <%= f.input :image, as: :file, input_html: { multiple: true }, label: "Company Image" %>
+      </div>
+      <div class="col-sm-6 form-group form-inline  info-adress">
+        <%= f.input :street %>
+        <%= f.input :house_number %>
+        <%= f.input :house_number_additional,  label: "House Number Additional " %>
+        <%= f.input :postcode %>
+        <%= f.input :country %>
+        <%= f.input :city %>
+      </div>
+    </div>
+    <%= f.submit "submit" %>
+  <% end %>
+</div>
