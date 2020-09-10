@@ -27,7 +27,7 @@
   headline: 'Change your life, learn to code.'
   company_description: 'Through immersive coding bootcamps, Le Wagon teaches you the skills and entrepreneurial mindset you need to thrive - now and in the future.'
   job_description: 'From the database to the user interface, learn to code your own web applications from scratch and become a full-stack Web Developer.'
-  starts_at: '2002-06-02'
+  starts_at: '2020-06-02'
   ends_at:
   lat:
   lng:
@@ -125,7 +125,7 @@
   image: '1484253292651-6e940b0a0e26_fctgfg'
   image_company_logo: 'https://res.cloudinary.com/dzgkt799y/image/upload/v1599732737/0_v9nqm6.png'
 - title: 'Regional Manager Benelux'
-  company: 'Globalinter.net | Global connectivity made simple'
+  company: 'Globalinter.net'
   url: 'https://globalinter.net/'
   specialty: 'Account Management'
   employment_type: 'Full Time'

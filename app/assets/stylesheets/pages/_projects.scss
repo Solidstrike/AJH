@@ -35,6 +35,7 @@
   display: flex;
   padding-right: 0%;
   padding-left: 0%;
+  height: 60vh;
 }
 
 a:hover {
@@ -42,11 +43,6 @@ a:hover {
 }
 .project-card {
   display: flex;
-  border: #eb6f0b;
-  border-style: dashed;
-  display: flex;
-  border: #eb6f0b;
-  border-style: dashed;
 }
 
 .project-container-info {
@@ -55,30 +51,48 @@ a:hover {
 }
 .project-info {
   display: flex;
-  border: #eb6f0b;
-  border-style: dashed;
   margin: auto;
-  padding: 10px;
+  padding: 20px;
   height: 50%;
+  padding-top: 50px;
+  padding-left: 50px;
 }
-
+.project-info h2 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  text-align: inherit;
+}
+.project-info p {
+  text-align: inherit;
+}
 .project-logo {
+  position: relative;
+}
+.project-logo img {
   display: flex;
-  border: #eb6f0b;
-  border-style: dashed;
   padding-right: none;
   padding-left: none;
+  object-fit: cover;
+  position: absolute;
+  border-radius: 10px;
+  top: 45%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: auto;
 }
 
 .project-headline {
-  border: #eb6f0b;
-  border-style: dashed;
-  height: 50%;
-  padding: 20px;
+  padding: 19px;
+  padding-left: 30px;
 }
 .project-img {
-  background: #eb6f0b;
-  height: 60vh;
+  object-fit: cover;
+  padding: 0%;
+}
+.project-img img {
   padding-right: none;
   padding-left: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
