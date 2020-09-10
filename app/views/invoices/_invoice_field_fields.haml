@@ -1,0 +1,25 @@
+.nested-fields
+  .row
+    .date-range.form-group.col-md-3
+      = f.label :start_at
+      %br
+      = f.date_select :start_at, class: 'form-control'
+      %br
+      = f.label :end_at
+      %br
+      = f.date_select :end_at, class: 'form-control'
+    .description.form-group.col-md-2
+      = f.label :description
+      = f.text_area :description, class: 'form-control'
+    .form-group.col-md-2
+      = f.label :hours
+      = f.number_field :hours, class: 'form-control total-change hours', min: 0
+    .form-group.col-md-2
+      = f.label :rate
+      = f.number_field :rate, class: 'form-control total-change rate', min: 0
+    .form-group.total.col-md-2
+      = f.label :total    
+      %span.total-sum
+      %span.euro €
+    = link_to_remove_association t('form.remove'), f
+  %hr

@@ -74,17 +74,14 @@ a.nav-link {
 a.nav-link.right {
   border-right: none;
   border-left: none;
-  transform: translate(0, -50%);
 }
-
 .nav-wolf {
-  margin: auto;
+  display: block;
   position: absolute;
   left: 20px;
+  top: 70px;
 }
 .nav-wolf img {
-  height: 7vh;
+  height: 10vh;
   clip-path: circle(39%);
-  top: 50%;
-  transform: translate(0, 45%);
 }
