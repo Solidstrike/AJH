@@ -1,0 +1,63 @@
+
+- title: 'European Business School IB'
+  company: 'European Business School (EBS) - London'
+  url: 'https://www.regents.ac.uk/'
+  specialty: 'Education'
+  employment_type: 'Full time'
+  headline: 'BA (Hons) International Business with French and a Focus in Management company_description: European Business School London was a private Business School in Regent's Park in Central London. It was a constituent school of Regent's College London, which became Regent's University London in 2013.'
+  job_description: 'The BA program in International Business provides students with a unique opportunity to combine general business knowledge with in depth expertise in the field of specialization (finance, marketing or management and leadership). We strongly believe that a solid understanding of all business functions enables the graduates to take up managerial and specialist positions with better preparation. '
+  starts_at: '2'005-01'-01'
+  ends_at:
+  lat:
+  lng:
+  street: 'Inner Cir'
+  house_number: '1'
+  house_number_additional:
+  postcode: 'NW1 4NS'
+  country: 'United Kingdom'
+  city: 'London'
+  salary:
+  image: '8237549_ovkvpb'
+  image_company_logo: 'images_qsfjxm'
+- title: 'Exchange Year ISC'
+  company: 'Institute Superior du Commerce (ISC)'
+  url: 'https://iscparis.com/'
+  specialty: 'Education'
+  employment_type: 'Full Time'
+  headline: 'Exchange year at Institute Superior du Commerce (ISC)'
+  company_description: "'The Institut Supérieur du Commerce (ISC Paris Business School), a business school located in Paris, is a French university-level institution (grande école). ISC Paris's degrees are accredited by the French Ministry of Education and the Association to Advance Collegiate Schools of Business, a standard reached by only 5% of business schools worldwide reflecting its established international reputation for high quality graduates.'"
+  job_description:  'Having learned business French at EBS in London, this was the chance to test it. Take an all French business course for a year my resolve and determination was tested at ever turn. '
+  starts_at: '2008-01-01'
+  ends_at:
+  lat:
+  lng:
+  street: 'Boulevard du Fort de Vaux'
+  house_number: '22'
+  house_number_additional:
+  postcode: '75017'
+  country: 'France'
+  city: 'Paris'
+  salary:
+  image: 'photo-1551634979-2b11f8c946fe_yugnz7'
+  image_company_logo: 'k27uw7nasleqx8yxaeb2'
+- title: 'International School of Amsterdam IB'
+  company: 'International School of Amsterdam'
+  url: https://www.isa.nl/
+  specialty: 'Education'
+  employment_type: 'Full Time'
+  headline: 'International School of Amsterdam IB Economics Higher, Geography Higher, English Higher, Physics, Math, Dutch'
+  company_description: 'The International School of Amsterdam, founded in 1964, continues to be a leader in education for international understanding – inspiring our diverse community of students to learn and live with purpose. ISA was the first school in the world to offer all three core IB programmes, and it continues to do so today.'
+  job_description:  'Our challenging academic curriculum embraces global perspectives and respects the identity, experiences and aspirations of individual students. Our strengths lie within our diverse community, world-class faculty and facilities, innovative teaching practices, and confident, engaged students.'
+  starts_at: '1998-01-01'
+  ends_at:
+  lat:
+  lng:
+  street: 'Sportlaan'
+  house_number: '45'
+  house_number_additional:
+  postcode: '1185 TB'
+  country: 'Netherlands'
+  city: 'Amstelveen'
+  salary:
+  image: '01_hbodwy'
+  image_company_logo: 'ISA-logo_km5hc0'

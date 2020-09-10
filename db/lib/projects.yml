@@ -1,7 +1,315 @@
-- name: bob
-  descript: hello
-- name:
-  descript: hello
--
+- title: 'AJH Consulting Founded'
+  company: 'AJ Holbrook Consulting'
+  url:
+  specialty: 'Business Development'
+  employment_type: 'Full-Time'
+  headline: 'Founding AJH '
+  company_description: 'Helping companies innovate, modernize and optimize into 2020 and beyond. AJH Helps organizations figure out any problem in their operations and work strategy and to improve their performance, primarily through the analysis of existing organizational problems and development of plans for improvement. '
+  job_description: 'Working with companies to reach there potential and excel in any need.  Delivering software solutions that improve business performance of the clients and Turning the initiatives into reality  – in other words, the strategic know-how and understanding of key technology drivers to plan the adoption, development and integration of advanced technology into clients business.'
+  starts_at: '2019-07-21'
+  ends_at:
+  lat:
+  lng:
+  street: 'Ruysdaelkade '
+  house_number: '257'
+  house_number_additional:
+  postcode: '1072AZ'
+  country: 'Netherlands'
+  salary:
+  image: 'light_ihdwfv'
+  image_company_logo: 'https://res.cloudinary.com/dzgkt799y/image/upload/v1599167449/AJH%20logo/logo_kzfves.gif'
+  city: 'Amsterdam'
+- title: 'Le Wagon Boot Camp'
+  company: 'Le Wagon '
+  url: 'https://www.lewagon.com/'
+  specialty: 'Web Development'
+  employment_type: 'Full time'
+  headline: 'Change your life, learn to code.'
+  company_description: 'Through immersive coding bootcamps, Le Wagon teaches you the skills and entrepreneurial mindset you need to thrive - now and in the future.'
+  job_description: 'From the database to the user interface, learn to code your own web applications from scratch and become a full-stack Web Developer.'
+  starts_at: '2002-06-02'
+  ends_at:
+  lat:
+  lng:
+  street: 'IJsbaanpad 9-11, '
+  house_number: '9-11'
+  house_number_additional:
+  postcode: '1076 CV'
+  country: 'Netherlands'
+  city: 'Amsterdam'
+  salary:
+  image: 'markus-spiske-TaKB-4F58ek-unsplash_ug0yte'
+  image_company_logo: 'https://res.cloudinary.com/dzgkt799y/image/upload/v1599731055/company%20logos%20and%20pics/raw_tengbj.jpg'
+- title: 'Summitcom Marketing Specialist'
+  company: 'Summitcom'
+  url: https://www.summitecom.com/
+  specialty: 'Marketing'
+  employment_type: 'Consulting'
+  headline: 'Help Ecommerce Businesses Scale To 7 & 8-'
+  company_description: 'Summit Ecom is a byproduct of the ‘old age’ marketing agency offerings. Most agencies are slow, unorganized & use logic rather than field tested concepts. I t doesn’t stop there, we understand that there is no point in pouring water into a bucket with an empty hole. That’s why we always start with the sales process. Whether it’s an Ecommerce business or a training company, we take a look at what your sales & indoctrination process looks like and we start there. Plug the leaky holes, then drive highly qualified leads.'
+  job_description: 'Summitcom is an online Marketing consultancy that helps SME`s develop there online presents. My role was to contact CEO`s and decision makers to see if we would be a good match to help one another achieve growth and success. By analyzing their websites and understand the incoming traffic we could help expand and potentially triple their new growth as well as increase client retention.'
+  starts_at: '2002-05-01'
+  ends_at:
+  lat:
+  lng:
+  street: 'Ruysdaelkade'
+  house_number: '257'
+  house_number_additional:
+  postcode: '1072AZ'
+  country: 'Netherlands'
+  city: 'Amsterdam'
+  salary:
+  image: 'photo-1581094285214-779d97298443_zhgvg8'
+  image_company_logo: 'https://res.cloudinary.com/dzgkt799y/image/upload/v1599254359/company%20logos%20and%20pics/summitcom_tpziym.jpg'
+- title: 'Amsterdam Operations Manager'
+  company: 'Eden.io'
+  url: http://eden.io/
+  specialty: 'Business Development'
+  employment_type: 'Consultancy'
+  headline: 'One Stop Shop for building owners. '
+  company_description: 'Eden is a One Stop Shop for building owners. We manage anything they need in their space and in the space of the internal office tenants. We offer more than a normal management company threw innovation and bringing it to 2020 with our online presence. Helping a US based company into the Dutch Market.'
+  job_description: 'Setting up show in Europe, Eden was looking for a specialist for facilitate there European expansion. As the  Amsterdam Operations Manager AJH was tasked to on-board clients, Partners and train them in the use of the app. '
+  starts_at: '2002-01-01'
+  ends_at:
+  lat:
+  lng:
+  street:
+  house_number: '54'
+  house_number_additional: 'Gilbert St'
+  postcode: 94103
+  country: ' United States'
+  city: 'San Francisco'
+  salary:
+  image: 'patrik-gothe-OoafRJlfhxc-unsplash_bwucic'
+  image_company_logo: 'https://res.cloudinary.com/dzgkt799y/image/upload/v1599252701/company%20logos%20and%20pics/edenlogo_csmykr.jpg'
+- title: 'Recruitment Consultant'
+  company: 'Michael Page'
+  url: 'https://www.michaelpage.nl/'
+  specialty: 'Recruitment'
+  employment_type: 'Full Time'
+  headline: 'Compliance and Banking Recruitment'
+  company_description: 'PageGroup is a provider of permanent, contract and temporary recruitment for clerical professionals, qualified professionals and executives across various disciplines. The company has four operational brands: Michael Page, Page Executive, Page Personnel and Page Outsourcing. The company operates in 36 countries globally. '
+  job_description: 'Across Financial Services, Industry & Commerce and Professional Services AJH knowledgeably, professionally and cost-effectively recruited staff in any of the following specialist functions Anti Bribery & Corruption, Anti Money Laundering (inc CDD/KYC), Compliance (inc Conduct Risk/ COBS).'
+  starts_at: '2019-07-20'
+  ends_at:
+  lat:
+  lng:
+  street: 'Strawinskylaan'
+  house_number: '421'
+  house_number_additional: 'World Trade Center'
+  postcode: '1077 XX'
+  country: 'The Netherlands'
+  city: 'Amsterdam'
+  salary:
+  image: 'photo-1507679799987-c73779587ccf_gwvdo5'
+  image_company_logo: 'https://res.cloudinary.com/dzgkt799y/image/upload/v1599253891/company%20logos%20and%20pics/gfj_brand_logo_xgrqab.jpg'
+- title: 'International Partner Manager'
+  company: 'Comsave'
+  url: 'https://www.comsave.com/'
+  specialty: 'Business Development'
+  employment_type: 'Full-time'
+  headline: 'International Partner Manager '
+  company_description: 'We are proud to be Europe’s fastest-growing independent network intelligence and connectivity platform, trusted as an integrated solution partner for carriers, wholesalers, and service providers to help them efficiently source, quote and connect. We offer instant, independent insight and delivery of Layer 2 and Layer 3 access on all European networks.'
+  job_description: 'Working B2B for the International Wholesale Sales Department and Account Management, Business Development by expanding and on-boarding other networks in Belgium, Germany and France.  Organizing large RFPs and worldwide projects, Identifying client’s needs as well as setting targets and meeting expectations, Using excellent communication and organization skills to engage with high level buyers. Identifying and on-boarding new clients and business opportunities. Acting as the first point of contact for company clients and meeting them in person to ensure good understanding of their needs while maintaining a strong business relationship.'
+  starts_at: '2018-06-01'
+  ends_at:
+  lat:
+  lng:
+  street: 'Danzigerkade'
+  house_number: '227'
+  house_number_additional:
+  postcode: '1013 AP'
+  country: 'Netherlands'
+  city: 'Amsterdam'
+  salary:
+  image: '1484253292651-6e940b0a0e26_fctgfg'
+  image_company_logo: 'https://res.cloudinary.com/dzgkt799y/image/upload/v1599732737/0_v9nqm6.png'
+- title: 'Regional Manager Benelux'
+  company: 'Globalinter.net | Global connectivity made simple'
+  url: 'https://globalinter.net/'
+  specialty: 'Account Management'
+  employment_type: 'Full Time'
+  headline: 'Regional Manager Benelux - Account and Senior Commercial Manager'
+  company_description: 'Globalinternet is a leading supplier of Managed Internet Access services offering internet connectivity worldwide. We provide customers with a simple and easy way to source Internet Access anywhere with centralized service delivery, billing and support. We partner with local Internet Service Providers throughout the world to offer business-grade Internet connectivity at the best price for any location, wherever in the world it may be.'
+  job_description: 'Responsible for Sales, Pricing and Product Portfolio of the Benelux Division. Understanding, analyzing and adapting to market trends.  Business Development with Client and ISP on-boarding and management. KPN Account Manager. Project Management (KPN delivery management worldwide.'
+  starts_at: '2015-11-02'
+  ends_at:
+  lat:
+  lng:
+  street: 'Prins Bernhardplein '
+  house_number: '200'
+  house_number_additional:
+  postcode: '1097 JB '
+  country: 'Netherlands'
+  city: 'Amsterdam'
+  salary:
+  image: 'uv_htivha'
+  image_company_logo: 'https://res.cloudinary.com/dzgkt799y/image/upload/v1599732975/0_h5yoit.png'
+- title: 'Ambassadors Assistant '
+  company: 'Macedonia Embassy'
+  url: http://investnorthmacedonia.gov.mk/
+  specialty: 'Diplomacy and Business Development'
+  employment_type: 'Part Time'
+  headline: 'Assistant to the Ambassador of the Republic of North Macedonia to the Kingdom of Netherlands'
+  company_description: 'Invest North Macedonia is an official Government investment and export promotion agency responsible for attracting foreign investments and supporting the export promotion of the Republic of North Macedonia. Our mission is to encourage and support new foreign direct investments to the country, establish and enhance business cooperation with local suppliers and promote the export potential of local companies to foreign markets.'
+  job_description: 'Worked on multiple projects with the Ambassador, most recently Invest Macedonia. Helped construct and presented the Invest Macedonia project with the Ambassador to a few of the top 500 companies in the Netherlands in order to attain new FDI opportunities. Organized and attended meetings, events and taking minutes.'
+  starts_at: '2015-01-01'
+  ends_at:
+  lat:
+  lng:
+  street: 'Laan van Meerdevoort'
+  house_number: '50 '
+  house_number_additional:
+  postcode: '2517 AM'
+  country: 'Netherlands'
+  city: 'The Hague'
+  salary:
+  image: 'Church-of-St-John-at-Kaneo_rrgaqe'
+  image_company_logo: 'https://res.cloudinary.com/dzgkt799y/image/upload/v1599734228/Logo-INM-Footer-7_bc71ac.png'
+- title: 'Airplane Data Specialist'
+  company: 'AerData'
+  url: 'https://www.aerdata.com/'
+  specialty: 'Data Analyst'
+  employment_type: 'Project Based'
+  headline: 'Aircraft Data Analyst'
+  company_description: 'AerData provides lease management, records management, engine fleet planning and audit and inspection software as well as technical and back office services for aircraft and engine operators, lessors and MROs. With a strong customer focus, AerData delivers reliable and secure services to its clients using latest technologies and state of the art infrastructure. The company is a wholly owned subsidiary of The Boeing Company.'
+  job_description: ' Compiling Data on Aircraft Lease Agreements as well as other documents after a large acquisition of U.S competition in order to create management summaries. Organizing lease contracts and verifying data with amendments to the original contract.  Created Macros to increase efficiency.'
+  starts_at: '2014-05-01'
+  ends_at:
+  lat:
+  lng:
+  street: 'Hoogoorddreef'
+  house_number: '15'
+  house_number_additional:
+  postcode: '1101 BA'
+  country: 'Netherlands'
+  city: 'Amsterdam'
+  salary:
+  image: 'photo-1545922016-87c93aaca2ce_vs7iju'
+  image_company_logo: 'https://res.cloudinary.com/dzgkt799y/image/upload/v1599734428/logo2_vmeaft.png'
+- title: 'Risk Operations - Deutsche Bank'
+  company: 'Deutsche Bank'
+  url: https://www.db.com/company/index.htm
+  specialty: 'Administrator in Risk Operations'
+  employment_type: 'Full time'
+  headline: 'Administrator in Risk Operations - Deutsche Bank'
+  company_description: 'Deutsche Bank is the leading German bank with strong European roots and a global network. The bank focuses on its strengths in a Corporate Bank newly created in 2019, a leading Private Bank, a focused investment bank and in asset management.'
+  job_description: 'Head of Italian trade surveillance for pbc and pwm clients. Administrator in communication and trade surveillance for the compliance department and control room. In depth analyses of highly sensitive data to ensure FSA and BAFIN regulatory requirements were complied with. Personally created a new process to increase the efficiency of the monthly reconciliation of data to ensure accuracy with large sets of data using Excel. Analyzed daily alerts using compliance programs such as Smartsbroker, Actimse and Facetime. In depth understanding of the banking sector and the lines of communication as well as specific products.'
+  starts_at: '2011-11-01'
+  ends_at:
+  lat:
+  lng:
+  street: 'Leibnizstraße'
+  house_number: '10'
+  house_number_additional:
+  postcode: '10625'
+  country: 'Germany'
+  city: 'Berlin'
+  salary:
+  image: 'photo-1596121605688-e3d0e00adfd9_b0qqwy'
+  image_company_logo: 'https://res.cloudinary.com/dzgkt799y/image/upload/v1599735497/deutsche-bank-logo_jwegcp.gif'
+- title: 'Start-Up Development'
+  company: 'Wimdu'
+  url: 'https://www.wimdu.com/'
+  specialty: 'Marketing'
+  employment_type: 'Full time'
+  headline: 'Start-Up Development as head of Marketing Team'
+  company_description: 'Wimdu, powered by HomeToGo, is an online marketplace for booking lodging, accessible by website and mobile app for iOS and Android. The company does not own any lodging; it is merely a broker and receives commissions from every booking. It is set up as a "clone" of similar websites.'
+  job_description: 'Established new processes in the start-up company. Worldwide director of classifieds at HQ organizing a team of 4-10 people locally with daily agenda and tasks. Calling international offices for updates and to set goals. Analyzing and emailing daily Google Analytics report. Established new layout using HTML and created an Excel sheet to facilitate the data input for non-HTML users. B to C customer care for the Netherlands. Online marketing sales, negotiating deals on online advertisement.'
+  starts_at: '2011-05-01'
+  ends_at:
+  lat:
+  lng:
+  street: ' Friedrichstraße'
+  house_number: '133'
+  house_number_additional:
+  postcode: '10117'
+  country: 'Germany'
+  city: 'Berlin'
+  salary: ''
+  image: 'photo-1542365775-b0037a7c904f_qoypwb'
+  image_company_logo:
+- title: 'Find solutions to social and political problems'
+  company: 'VU University Amsterdam'
+  url: https://www.vu.nl/en/
+  specialty: 'Political Science and Government'
+  employment_type: ' Education'
+  headline: ' Master’s Degree'
+  company_description: 'The Vrije Universiteit Amsterdam is a university in Amsterdam, Netherlands, founded in 1880, and ranked among the world`s top 150 universities by four major ranking tables. The VU is one of two large, publicly funded research universities in the city, the other being the University of Amsterdam. '
+  job_description: 'Never before have political decisions been so interconnected across the world. A global pandemic, climate change, shifts in economic power, the rise of AI and big data. They all impact global politics. But how? And who are the main actors?'
+  starts_at: '2014-01-01'
+  ends_at:
+  lat:
+  lng:
+  street: 'De Boelelaan'
+  house_number: '1105'
+  house_number_additional:
+  postcode: '1081 HV'
+  country: 'Netherlands'
+  city: 'Amsterdam'
+  salary:
+  image: 'VU-Amsterdam-Fellowship-Programme_fq2nbe'
+  image_company_logo: 's9pbky60ouwyouuiothz'
 
-  # - is new project
+- title: 'European Business School IB'
+  company: 'European Business School (EBS) - London'
+  url: 'https://www.regents.ac.uk/'
+  specialty: 'Education'
+  employment_type: 'Full time'
+  headline: 'BA (Hons) International Business with French and a Focus in Management company_description: European Business School London was a private Business School in Regent`s Park in Central London. It was a constituent school of Regent`s College London, which became Regent`s University London in 2013.'
+  job_description: 'The BA program in International Business provides students with a unique opportunity to combine general business knowledge with in depth expertise in the field of specialization (finance, marketing or management and leadership). We strongly believe that a solid understanding of all business functions enables the graduates to take up managerial and specialist positions with better preparation. '
+  starts_at: '2005-01-01'
+  ends_at:
+  lat:
+  lng:
+  street: 'Inner Cir'
+  house_number: '1'
+  house_number_additional:
+  postcode: 'NW1 4NS'
+  country: 'United Kingdom'
+  city: 'London'
+  salary:
+  image: '8237549_ovkvpb'
+  image_company_logo: 'images_qsfjxm'
+- title: 'Exchange Year ISC'
+  company: 'Institute Superior du Commerce (ISC)'
+  url: 'https://iscparis.com/'
+  specialty: 'Education'
+  employment_type: 'Full Time'
+  headline: 'Exchange year at Institute Superior du Commerce (ISC)'
+  company_description: "'The Institut Supérieur du Commerce (ISC Paris Business School), a business school located in Paris, is a French university-level institution (grande école). ISC Paris`s degrees are accredited by the French Ministry of Education and the Association to Advance Collegiate Schools of Business, a standard reached by only 5% of business schools worldwide reflecting its established international reputation for high quality graduates.'"
+  job_description: 'Having learned business French at EBS in London, this was the chance to test it. Take an all French business course for a year my resolve and determination was tested at ever turn. '
+  starts_at: '2008-01-01'
+  ends_at:
+  lat:
+  lng:
+  street: 'Boulevard du Fort de Vaux'
+  house_number: '22'
+  house_number_additional:
+  postcode: '75017'
+  country: 'France'
+  city: 'Paris'
+  salary:
+  image: 'photo-1551634979-2b11f8c946fe_yugnz7'
+  image_company_logo: 'k27uw7nasleqx8yxaeb2'
+- title: 'International School of Amsterdam IB'
+  company: 'International School of Amsterdam'
+  url: https://www.isa.nl/
+  specialty: 'Education'
+  employment_type: 'Full Time'
+  headline: 'International School of Amsterdam IB Economics Higher, Geography Higher, English Higher, Physics, Math, Dutch'
+  company_description: 'The International School of Amsterdam, founded in 1964, continues to be a leader in education for international understanding – inspiring our diverse community of students to learn and live with purpose. ISA was the first school in the world to offer all three core IB programmes, and it continues to do so today.'
+  job_description: 'Our challenging academic curriculum embraces global perspectives and respects the identity, experiences and aspirations of individual students. Our strengths lie within our diverse community, world-class faculty and facilities, innovative teaching practices, and confident, engaged students.'
+  starts_at: '1998-01-01'
+  ends_at:
+  lat:
+  lng:
+  street: 'Sportlaan'
+  house_number: '45'
+  house_number_additional:
+  postcode: '1185 TB'
+  country: 'Netherlands'
+  city: 'Amstelveen'
+  salary:
+  image: '01_hbodwy'
+  image_company_logo: 'ISA-logo_km5hc0'
