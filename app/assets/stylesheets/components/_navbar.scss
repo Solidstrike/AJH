@@ -4,6 +4,7 @@
 }
 
 .navbar-lewagon {
+  height: 10vh;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -68,11 +69,12 @@ a.nav-link {
   position: absolute;
   right: 5px;
   top: 50%;
-  transform: translate(0, -50%);
+  transform: translate(0, 15%);
 }
 a.nav-link.right {
   border-right: none;
   border-left: none;
+  transform: translate(0, -50%);
 }
 
 .nav-wolf {
@@ -81,7 +83,7 @@ a.nav-link.right {
   left: 20px;
 }
 .nav-wolf img {
-  height: 10vh;
+  height: 7vh;
   clip-path: circle(39%);
   top: 50%;
   transform: translate(0, 45%);

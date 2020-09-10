@@ -45,8 +45,8 @@ project = projects[14] ;pro = Project.new(project.merge({user_id: user_1.id}).ex
 # project_4 = Project.create(city: "paris", user_id: user_1.id, title: 'New', company: 'lala', headline: 'Web-Dev', job_description: 'lalal alal alalalala alalala la lal la ', starts_at: 3.years.ago)
 
 Review.create(user: User.third, project: Project.first, content: 'AJH really held it togeather! Keep it up and you will go far.', rating: 4)
-Review.create(user: User.fourth, project: Project.second, content: "AJH's programming is something to be feared. Even I am worried of this supcoming star", rating: 5)
-Review.create(user:User.last, project: Project.last, content: 'Better then founding Apple, would work with again for sure', rating: 5)
+Review.create(user: User.fourth, project: Project.second, content: "AJH's programming is something to be feared. Even I am worried of this supcoming star!", rating: 5)
+Review.create(user:User.last, project: Project.last, content: 'Better then founding Apple, would work with again for sure.', rating: 5)
 
 
 Post.create(user: User.first, project: Project.first, content: 'something')

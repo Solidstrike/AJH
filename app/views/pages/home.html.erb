@@ -1,8 +1,9 @@
 <%= render 'top_vid' %>
 <%= render 'shared/navbar' %>
-<%= render 'banner' %>
+
+<%= render 'shared/review_carousel', reviews: @reviews  %>
 <%= render 'parallax' %>
-<%#= render 'shared/review_carousel', reviews: @reviews  %>
+
 <%# <script>
   $( document ).ready(function() {
      $( "html" ).scrollTop( 0 );

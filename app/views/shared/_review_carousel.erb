@@ -1,5 +1,5 @@
 <div class="container-carousel col-sm-12">
-  <div class="gray-box col-sm-6 offset-sm-3">
+  <div class="gray-box">
     <div id="carouselExampleSlidesOnly" class="carousel slide my-3" data-ride="carousel">
       <div class="carousel-inner">
         <% @reviews.each_with_index do | review, index|  %>
@@ -7,9 +7,10 @@
             <div class="d-block w-100 container-carousel" alt="First slide">
               <img src="" alt="">
               <div class="carousel-caption d-none d-md-block">
-                <h4><%= review.content %> </h4>
-                <p><%= review.user.first_name %> </p>
-                <p> <%= review.user.company %></p>
+                <h3> <%= " #{review.rating}/5" %>  </h3>
+                <h4><%= "'#{review.content}' " %> </h4>
+                <br>
+                <p> <%=   "#{review.user.first_name} #{review.user.last_name}  -  #{review.user.company.capitalize}" %> </p>
               </div>
             </div>
           </div>

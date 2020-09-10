@@ -2,17 +2,45 @@
 }
 
 .gray-box {
-  height: 200px;
-  width: 400px;
-  background: gray;
+  height: 250px;
+  width: 800px;
+  background: rgba(148, 147, 147, 0.534);
   border-radius: 15px;
 }
 
-// <div class="carousel-caption d-none d-md-block">
-//                 <h4>great time was fun </h4>
-//                 <p>bob </p>
-//                 <p> </p>
-//               </div>
-// gray box push up?
+.container-carousel {
+  height: 40vh;
+  position: relative;
+}
+.gray-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.carousel-inner {
+}
+.carousel-item {
+}
+.d-block {
+}
+.carousel-caption span {
+  line-height: 3px;
+}
+.carousel-caption {
+  position: relative;
+  bottom: 0px;
+  width: 550px;
+  line-height: 3px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
 
-// use inspect
+.carousel-caption h4 {
+  font-style: italic;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.carousel-caption p {
+  text-align: end;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}

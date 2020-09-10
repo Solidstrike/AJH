@@ -4,6 +4,7 @@
   padding: 150px 0;
   text-align: center;
   height: 100vh;
+  height: 70vh;
 }
 
 .banner-project h1 {
@@ -37,16 +38,14 @@
 
 .company-top {
   display: flex;
-  height: 50vh;
-  border: #eb6f0b;
-  border-style: dashed;
+  height: 40vh;
+
   padding-right: 0%;
   padding-left: 0%;
 }
 .company-info-intro {
   padding-top: 30px;
-  border: #eb6f0b;
-  border-style: dashed;
+
   padding-right: none;
   padding-left: 40px;
   font-size: 25px;
@@ -54,43 +53,37 @@
 }
 
 .company-info {
-  border: #eb6f0b;
-  border-style: dashed;
   padding-right: none;
   padding: 30px;
   text-align: justify;
+  padding-top: 45px;
 }
 .company-info p {
   font-size: 18px;
+  padding-top: 40xp;
 }
 
 .company-logo {
-  border: #eb6f0b;
-  border-style: dashed;
   padding-right: 0%;
   padding-left: 0%;
 }
 
 .company-middle {
-  height: 50vh;
+  height: 40vh;
   display: flex;
-  border: #eb6f0b;
-  border-style: dashed;
+
   padding-right: 0%;
   padding-left: 0%;
 }
 .map {
-  border: #eb6f0b;
-  border-style: dashed;
   padding-right: 0%;
   padding-left: 0%;
 }
 
 .company-bottom {
-  height: 50vh;
+  height: 40vh;
   display: flex;
-  border: #eb6f0b;
-  border-style: dashed;
+
   padding-right: 0%;
   padding-left: 0%;
 }

@@ -3,28 +3,30 @@
     <div class="col-sm-6 project-info">
       <ul>
         <h2>
-          <%= project.title %>
+          <%= project.company %>
         </h2>
         <p></p>
         <p>
-          <%= "Company: #{project.company}"%>
+          <%= project.title %>
         </p>
         <p>
-          <%= "Type: #{project.specialty}" %>
+          <%= project.specialty %>
         </p>
+        <p>
+          <%= project.employment_type  %></p>
       </ul>
     </div>
     <div class="col-sm-6 project-logo">
       <% if  project.image_company_logo.attached?%>
         <%= project.image_company_logo %>
       <% else  %>
-        <h1>No logo</h1>
+        <%= image_tag 'logo.GIF' %>
       <% end %>
     </div>
   </div>
   <div class="col-sm-12 project-headline">
     <p>
-      <%= project.headline %>
+      <%= project.company_description %>
     </p>
   </div>
 </div>
