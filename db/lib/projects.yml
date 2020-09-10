@@ -228,7 +228,7 @@
   city: 'Berlin'
   salary: ''
   image: 'photo-1542365775-b0037a7c904f_qoypwb'
-  image_company_logo:
+  image_company_logo: 'https://res.cloudinary.com/dzgkt799y/image/upload/v1599735999/g7magbvtscmopy077yfh.png'
 - title: 'Find solutions to social and political problems'
   company: 'VU University Amsterdam'
   url: https://www.vu.nl/en/
@@ -249,7 +249,7 @@
   city: 'Amsterdam'
   salary:
   image: 'VU-Amsterdam-Fellowship-Programme_fq2nbe'
-  image_company_logo: 's9pbky60ouwyouuiothz'
+  image_company_logo: 'https://res.cloudinary.com/dzgkt799y/image/upload/v1599736347/s9pbky60ouwyouuiothz.png'
 
 - title: 'European Business School IB'
   company: 'European Business School (EBS) - London'
@@ -270,7 +270,7 @@
   city: 'London'
   salary:
   image: '8237549_ovkvpb'
-  image_company_logo: 'images_qsfjxm'
+  image_company_logo: 'https://res.cloudinary.com/dzgkt799y/image/upload/v1599738038/images_qsfjxm.png'
 - title: 'Exchange Year ISC'
   company: 'Institute Superior du Commerce (ISC)'
   url: 'https://iscparis.com/'
@@ -291,7 +291,7 @@
   city: 'Paris'
   salary:
   image: 'photo-1551634979-2b11f8c946fe_yugnz7'
-  image_company_logo: 'k27uw7nasleqx8yxaeb2'
+  image_company_logo: 'https://res.cloudinary.com/dzgkt799y/image/upload/v1599738341/k27uw7nasleqx8yxaeb2.jpg'
 - title: 'International School of Amsterdam IB'
   company: 'International School of Amsterdam'
   url: https://www.isa.nl/
@@ -312,4 +312,4 @@
   city: 'Amstelveen'
   salary:
   image: '01_hbodwy'
-  image_company_logo: 'ISA-logo_km5hc0'
+  image_company_logo: 'https://res.cloudinary.com/dzgkt799y/image/upload/v1599738857/ISA-logo_km5hc0.png'
