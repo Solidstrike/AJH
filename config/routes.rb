@@ -1,13 +1,15 @@
 Rails.application.routes.draw do
   devise_for :users
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root to: 'pages#home'
   match 'users' => 'users#show', via: :get
 
-
-get 'about', to: 'pages#about'
-get 'faq', to: 'pages#faq'
+  
+  get 'about', to: 'pages#about' 
+  get 'faq', to: 'pages#faq' 
 
   resources :projects
+  resources :invoices
 
   resources :new_project_requests do
     member do
@@ -20,6 +22,6 @@ get 'faq', to: 'pages#faq'
   resources :contacts, only: [ :new, :create, :thanks ]
 
 
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+# For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
 

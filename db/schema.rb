@@ -46,6 +46,31 @@ ActiveRecord::Schema.define(version: 2020_09_10_181007) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "invoice_fields", force: :cascade do |t|
+    t.date "start_at"
+    t.date "end_at"
+    t.string "description"
+    t.float "hours"
+    t.float "rate"
+    t.float "total"
+    t.bigint "invoice_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["invoice_id"], name: "index_invoice_fields_on_invoice_id"
+  end
+
+  create_table "invoices", force: :cascade do |t|
+    t.string "number"
+    t.date "billing_date"
+    t.date "payment_date"
+    t.float "total"
+    t.string "your_references"
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_invoices_on_user_id"
+  end
+
 # Could not dump table "new_project_requests" because of following StandardError
 #   Unknown type 'request_status' for column 'status'
 
@@ -112,11 +137,14 @@ ActiveRecord::Schema.define(version: 2020_09_10_181007) do
     t.string "phone_number"
     t.string "profile_image"
     t.string "company_logo"
+    t.boolean "is_admin"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "invoice_fields", "invoices"
+  add_foreign_key "invoices", "users"
   add_foreign_key "new_project_requests", "projects"
   add_foreign_key "new_project_requests", "users"
   add_foreign_key "posts", "projects"
