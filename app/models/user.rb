@@ -37,7 +37,7 @@ class User < ApplicationRecord
    has_one_attached :image
    has_one_attached :company_logo
    validates :first_name, presence: true
-   validates :last_name, presence: true 
+   validates :last_name, presence: true
 
   scope :not_admins, -> { where(is_admin: [false, nil])}
   scope :admins, -> { where(is_admin: true)}

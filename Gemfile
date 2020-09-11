@@ -34,6 +34,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'devise'
 gem 'devise-i18n'
+gem 'devise-i18n-views'
 gem 'rails-i18n'
 gem 'cloudinary'
 gem 'autoprefixer-rails'
