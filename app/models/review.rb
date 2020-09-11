@@ -7,7 +7,7 @@
 #  rating     :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-#  project_id :bigint           not null
+#  project_id :bigint
 #  user_id    :bigint           not null
 #
 # Indexes

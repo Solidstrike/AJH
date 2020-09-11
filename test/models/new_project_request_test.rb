@@ -3,7 +3,7 @@
 # Table name: new_project_requests
 #
 #  id         :bigint           not null, primary key
-#  status     :string           default("pending")
+#  status     :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #  project_id :bigint           not null

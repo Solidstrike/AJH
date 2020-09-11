@@ -12,8 +12,6 @@
 #  headline                :string
 #  house_number            :integer
 #  house_number_additional :string
-#  image                   :string
-#  image_company_logo      :string
 #  job_description         :text
 #  lat                     :float
 #  lng                     :float

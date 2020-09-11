@@ -3,7 +3,7 @@
 # Table name: new_project_requests
 #
 #  id         :bigint           not null, primary key
-#  status     :string           default("pending")
+#  status     :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #  project_id :bigint           not null
@@ -22,7 +22,8 @@
 class NewProjectRequest < ApplicationRecord
   belongs_to :users
   belongs_to :projects
-SPECIALTY = ["Business Development", "Account Management", "Sales", "Web-Development", "Recruitment"]
-PAY = ["Per Hour", "Project Based", "Monthly", "Commission Based" ]
-EMPTYPE = ["Full Time", "Part Time", "Contractor"]
+  enum status: %w(pending counteroffer accepted declined)
+  SPECIALTY = ["Business Development", "Account Management", "Sales", "Web-Development", "Recruitment"]
+  PAY = ["Per Hour", "Project Based", "Monthly", "Commission Based" ]
+  EMPTYPE = ["Full Time", "Part Time", "Contractor"]
 end

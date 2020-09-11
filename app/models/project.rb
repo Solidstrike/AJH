@@ -12,8 +12,6 @@
 #  headline                :string
 #  house_number            :integer
 #  house_number_additional :string
-#  image                   :string
-#  image_company_logo      :string
 #  job_description         :text
 #  lat                     :float
 #  lng                     :float
@@ -53,5 +51,10 @@ class Project < ApplicationRecord
   validates :headline, presence: true
   validates :job_description, presence: true
   validates :starts_at, presence: true
-  
+  # validates :specialty, inclusion: {in:SPECIALTY}
+  # validates :pay_type, inclusion: {in:PAY}
+  # validates :employment_type, inclusion: {in:EMPTYPE}
+  SPECIALTY = ["Business Development", "Account Management", "Sales", "Web-Development", "Recruitment"]
+  PAY = ["Per Hour", "Project Based", "Monthly", "Commission Based" ]
+  EMPTYPE = ["Full Time", "Part Time", "Contractor"]
 end
