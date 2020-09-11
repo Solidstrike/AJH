@@ -6,7 +6,7 @@
     <%= render 'date_project', year:year %>
     <% project_by_year.each do |city, project_by_city|  %>
       <%= render 'city_project', city:city %>
-      <% project_by_city.each_with_index do | info, index|  %>
+      <% project_by_city.each_with_index do |info, index|  %>
         <%= link_to project_path(info) do %>
           <% if index.even? %>
             <div class="project-info-pic">

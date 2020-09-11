@@ -18,7 +18,7 @@
     </div>
     <div class="col-sm-6 project-logo">
       <% if  project.image_company_logo.attached?%>
-        <%= project.image_company_logo %>
+        <%= image_tag project.image_company_logo %>
       <% else  %>
         <%= image_tag 'logo.GIF' %>
       <% end %>

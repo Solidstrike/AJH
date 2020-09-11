@@ -1,6 +1,7 @@
+<%#= project.inspect %>
 <div class="col-md-6 project-im project-img">
   <% if project.image.attached? %>
-    <%= cl_image_tag image.key, crop: :fill %>
+    <%= cl_image_tag project.image.key, crop: :fill %>
   <% else  %>
     <%=  image_tag 'light.jpg' %>
   <% end %>
