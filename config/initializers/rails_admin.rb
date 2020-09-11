@@ -4,12 +4,8 @@ RailsAdmin.config do |config|
 
   # == Devise ==
   config.authorize_with do |controller|
-    unless current_user && current_user.admin?
-      if current_user
-        redirect_to :back
-      else
-        redirect_to new_user_session_path, error: "Access Denied"
-      end
+    if !current_user&.admin?
+      redirect_to new_session_path(:user), error: "Access Denied"
     end
   end
 
