@@ -21,6 +21,11 @@
       <li class="nav-item">
         <%= link_to "Contact Us",  new_contact_path, class: "nav-link" %>
       </li>
+      <%- if current_user&.is_admin %>
+        <li class="nav-item">
+          <%= link_to "Create invoice", new_invoice_path, class: "nav-link right" %>
+        </li>
+      <% end %>
       <li class="nav-item-right">
         <%= link_to "Partners", new_user_session_path, class: "nav-link right" %>
       </li>
