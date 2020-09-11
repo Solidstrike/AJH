@@ -46,8 +46,6 @@
 }
 
 .title {
-  border: #eb6f0b;
-  border-style: dashed;
   display: flex;
   padding: 0%;
 }
@@ -57,14 +55,10 @@
 }
 
 .info-propsal-main {
-  border: #eb6f0b;
-  border-style: dashed;
   display: flex;
   padding: 0%;
 }
 .info-propsal-main label {
-  border: #eb6f0b;
-  border-style: dashed;
   display: flex;
   padding: 0%;
   justify-content: right;
@@ -72,38 +66,29 @@
 }
 
 .info-left {
-  border: #eb6f0b;
-  border-style: dashed;
   display: flex;
   padding: 0%;
 }
 .info-right {
-  border: #eb6f0b;
-  border-style: dashed;
   display: flex;
   padding: 0%;
 }
 .text-area {
-  border: #eb6f0b;
-  border-style: dashed;
   display: flex;
 }
 .info-pic {
-  border: #eb6f0b;
-  border-style: dashed;
-
   justify-content: right;
 }
 .info-adress {
-  border-color: red;
-  border-style: dashed;
   border: 2px;
   justify-content: right;
 }
 
 .headline {
-  border: #eb6f0b;
-  border-style: dashed;
   display: flex;
   padding: 0%;
+}
+
+.modal-dialog {
+  max-width: 85vw;
 }
