@@ -26,9 +26,20 @@
           <%= link_to "Create invoice", new_invoice_path, class: "nav-link right" %>
         </li>
       <% end %>
-      <li class="nav-item-right">
-        <%= link_to "Partners", new_user_session_path, class: "nav-link right" %>
-      </li>
+
+      <% if user_signed_in? %>
+        <li class="nav-item">
+          <%= link_to "Invoices", invoices_path, class: "nav-link right" %>
+        </li>
+        <li class="nav-item-right">
+          <%= current_user.first_name.capitalize %>
+          <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+        </li>
+      <% else %>
+        <li class="nav-item-right">
+          <%= link_to "Partners", new_session_path, class: "nav-link right" %>
+        </li>
+      <% end %>
     </ul>
   </div>
 </div>

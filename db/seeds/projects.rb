@@ -9,8 +9,7 @@ def open_cloudinary(url)
   begin
     open(cloudinary_url(url))
   rescue OpenURI::HTTPError
-    open("#{Rails.root}/app/assets/images/logo.png")
-  else
+    p "ERROR open iamge"
     open("#{Rails.root}/app/assets/images/logo.png")
   end
 end

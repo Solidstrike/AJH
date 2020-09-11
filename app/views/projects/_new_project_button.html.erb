@@ -5,7 +5,7 @@
   <% if current_user %>
     <%= link_to 'add a review', new_review_path, remote: true %>
   <% else %>
-    <%= link_to "add a review", new_user_session_path %>
+    <%= link_to "add a review", new_session_path %>
   <% end %>
   <div class="float-left">
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project-modal">

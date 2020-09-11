@@ -8,7 +8,7 @@ RailsAdmin.config do |config|
       if current_user
         redirect_to :back
       else
-        redirect_to new_user_session_path, error: "Access Denied"
+        redirect_to new_session_path, error: "Access Denied"
       end
     end
   end
