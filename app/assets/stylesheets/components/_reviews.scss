@@ -6,11 +6,11 @@
   position: absolute;
   transition: all 0.5s ease;
   top: 0px;
-}
-#review-popup.active {
-  position: absolute;
-  top: -230px;
-  background-color: rgb(32, 32, 54);
-  border-radius: 5px;
-  width: 30vw;
+  &.active {
+    top: -378px;
+    background-color: #202036;
+    border-radius: 5px;
+    width: 40vw;
+    padding: 50px;
+  }
 }

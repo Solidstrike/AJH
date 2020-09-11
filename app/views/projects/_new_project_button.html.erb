@@ -3,15 +3,12 @@
     <div id='review-popup'></div>
   </div>
   <% if current_user %>
-    <%= link_to 'add a review', new_user_session_path, class: "btn btn-flat", remote: true %>
+    <%= link_to 'add a review', new_review_path, class: "btn btn-flat float-left", remote: true %>
   <% else %>
-    <%= link_to "add a review", new_user_session_path, class: "btn btn-flat" %>
+    <%= link_to "sign up to add a review", new_user_session_path, class: "btn btn-flat float-left" %>
   <% end %>
-  <div class="float-left">
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project-modal">
-  propose a project
-</button>  </div>
+  <button type="button" class="btn btn-flat" data-toggle="modal" data-target="#project-modal">propose a project</button>
   <div class="float-right">
-    <a class="btn btn-ghost" href="https://calendly.com/addisonajh/30min">Plan a Meeting?</a>
+    <a class="btn btn-flat" href="https://calendly.com/addisonajh/30min">Plan a Meeting?</a>
   </div>
 </div>
