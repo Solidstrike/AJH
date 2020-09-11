@@ -17,5 +17,11 @@ nl:
 
 
   total_without_tax: totaal zonder belasting
-  tax: belasting
+  tax: belastings
   total_with_tax: totaal met belasting
+
+  date_range: datum
+  description: omschrijving
+  rate: tarief
+  hours: uren
+  total: totaal

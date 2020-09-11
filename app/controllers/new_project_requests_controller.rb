@@ -16,6 +16,7 @@ class NewProjectRequestsController < ApplicationController
     else
       @project = @new_request.project
       render :new
+    end
   end
 
   def update

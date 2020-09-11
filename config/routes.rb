@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   match 'users' => 'users#show', via: :get
 
-  
   get 'about', to: 'pages#about' 
   get 'faq', to: 'pages#faq' 
 

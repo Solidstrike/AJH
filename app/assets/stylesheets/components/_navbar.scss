@@ -78,10 +78,14 @@ a.nav-link.right {
 .nav-wolf {
   display: block;
   position: absolute;
-  left: 20px;
-  top: 70px;
+  left: 1vw;
+  top: 5vh;
+  img {
+    height: 10vh;
+    clip-path: circle(39%);
+  }
 }
-.nav-wolf img {
+img.nav-wolf {
   height: 10vh;
   clip-path: circle(39%);
 }

@@ -3,7 +3,7 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide my-3" data-ride="carousel">
       <div class="carousel-inner">
         <% @reviews.each_with_index do | review, index|  %>
-          <div class=" carousel-item <% if index == 0 %> active <% end %>">
+          <div class="item <% if index == 0 %> active <% end %>">
             <div class="d-block w-100 container-carousel" alt="First slide">
               <img src="" alt="">
               <div class="carousel-caption d-none d-md-block">
@@ -14,7 +14,7 @@
               </div>
             </div>
           </div>
-        <% end	 %>
+        <% end %>
       </div>
     </div>
   </div>

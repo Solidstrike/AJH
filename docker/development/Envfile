@@ -2,4 +2,3 @@ NODE_ENV=development
 RAILS_ENV=development
 RACK_ENV=development
 RAILS_LOG_TO_STDOUT=true
-CLOUDINARY_URL=cloudinary://874837483274837:a676b67565c6767a6767d6767f676fe1@sample

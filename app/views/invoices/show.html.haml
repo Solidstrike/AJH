@@ -1,79 +1,67 @@
-.container
+.container.invoice-show
   .row
     .col-12
       .card
         .card-body.p-0
           .row.p-5
             .col-md-6
-              = image_tag 'logo.png'
+              = image_tag wolf_url, class: 'nav-wolf'
             .col-md-6.text-right
-              %p.font-weight-bold.mb-1 Invoice #550
-              %p.text-muted Due to: 4 Dec, 2019
+              %p.font-weight-bold.mb-1= @invoice.number
+              %p.text-muted
+                = t('activerecord.attributes.invoice.billing_date')
+                = @invoice.billing_date.strftime('%-d %b %y')
+              %p.text-muted
+                = t('activerecord.attributes.invoice.payment_date')
+                = @invoice.payment_date.strftime('%-d %b %y')
           %hr.my-5/
           .row.pb-5.p-5
             .col-md-6
-              %p.font-weight-bold.mb-4 Client Information
-              %p.mb-1 John Doe, Mrs Emma Downson
-              %p Acme Inc
-              %p.mb-1 Berlin, Germany
-              %p.mb-1 6781 45P
+              %p.font-weight-bold.mb-4= t('activerecord.attributes.invoice.user')
+              %p.mb-1= @invoice.user.full_name
+              %p= @invoice.user.company
             .col-md-6.text-right
               %p.font-weight-bold.mb-4 Payment Details
               %p.mb-1
-                %span.text-muted VAT:
-                1425782
-              %p.mb-1
-                %span.text-muted VAT ID:
-                10253642
-              %p.mb-1
-                %span.text-muted Payment Type:
-                Root
+                %span.text-muted= t('activerecord.attributes.invoice.your_references')
+                = @invoice.your_references
+              -# %p.mb-1
+              -#   %span.text-muted Payment Type:
+              -#   Root
               %p.mb-1
                 %span.text-muted Name:
-                John Doe
+                Addison Holbrook
           .row.p-5
             .col-md-12
               %table.table
                 %thead
                   %tr
-                    %th.border-0.text-uppercase.small.font-weight-bold ID
-                    %th.border-0.text-uppercase.small.font-weight-bold Item
-                    %th.border-0.text-uppercase.small.font-weight-bold Description
-                    %th.border-0.text-uppercase.small.font-weight-bold Quantity
-                    %th.border-0.text-uppercase.small.font-weight-bold Unit Cost
-                    %th.border-0.text-uppercase.small.font-weight-bold Total
+                    %th.border-0.text-uppercase.small.font-weight-bold= t('date_range').upcase
+                    %th.border-0.text-uppercase.small.font-weight-bold= t('description').upcase
+                    %th.border-0.text-uppercase.small.font-weight-bold= t('hours').upcase
+                    %th.border-0.text-uppercase.small.font-weight-bold= t('rate').upcase
+                    %th.border-0.text-uppercase.small.font-weight-bold= t('total').upcase
                 %tbody
-                  %tr
-                    %td 1
-                    %td Software
-                    %td LTS Versions
-                    %td 21
-                    %td $321
-                    %td $3452
-                  %tr
-                    %td 1
-                    %td Software
-                    %td Support
-                    %td 234
-                    %td $6356
-                    %td $23423
-                  %tr
-                    %td 1
-                    %td Software
-                    %td Sofware Collection
-                    %td 4534
-                    %td $354
-                    %td $23434
+                  - @invoice.invoice_fields.each do |invoice_field|
+                    %tr
+                      %td= invoice_field.date_range
+                      %td= invoice_field.description
+                      %td= invoice_field.hours
+                      %td= "#{invoice_field.rate}"
+                      %td= "€ #{invoice_field.total}"
           .d-flex.flex-row-reverse.bg-dark.text-white.p-4
             .py-3.px-5.text-right
-              .mb-2 Grand Total
-              .h2.font-weight-light $234,234
+              .mb-2= t('total_with_tax').upcase
+              .h2.font-weight-light
+                €
+                = @invoice.total_with_tax
             .py-3.px-5.text-right
-              .mb-2 Discount
-              .h2.font-weight-light 10%
+              .mb-2= "#{t('tax').upcase} 21%"
+              .h2.font-weight-light
+                €
+                = @invoice.tax
             .py-3.px-5.text-right
-              .mb-2 Sub - Total amount
-              .h2.font-weight-light $32,432
-  .text-light.mt-5.mb-5.text-center.small
-    by :
-    %a.text-light{:href => "http://totoprayogo.com", :target => "_blank"} totoprayogo.com
+              .mb-2= t('total_without_tax').upcase
+              .h2.font-weight-light
+                €
+                = @invoice.total
