@@ -3,7 +3,7 @@ Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/ra
 
 
 ### Development with docker-compose
-
+run `touch .env` create gitignored file where you can store locally ENV varibles that should not be shared
 `docker-compose up` will up services and make http://localhost:3000 available  
 Running tests with `docker-compose exec test rspec|rails test` or `docker-compose run test rspec` if you didn't run `docker-compose up` command yet.  
 Sh into current running docker container `docker-compose exec app /bin/sh` then you able to run default rails command like `rails g migration AddSome ...`

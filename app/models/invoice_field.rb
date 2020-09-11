@@ -27,4 +27,8 @@ class InvoiceField < ApplicationRecord
   def count_total
     (rate * hours).round(2)
   end
+
+  def date_range
+    start_at..end_at
+  end
 end

@@ -1,5 +1,5 @@
 FROM node:13.12.0-alpine3.11 as node
-FROM ruby:2.7.1-alpine3.12 as build-base
+FROM ruby:2.7.1-alpine3.11 as build-base
 
 COPY --from=node /usr/local/bin/node /usr/local/bin/
 COPY --from=node /opt/yarn-v1.22.4 /opt/yarn-v1.22.4

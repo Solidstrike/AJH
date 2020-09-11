@@ -1,6 +1,7 @@
 class InvoicesController < ApplicationController
   before_action :set_invoice, only: [:show, :edit, :update, :destroy]
-
+  
+  before_action :authenticate_admin!, only: [:new, :create, :update, :edit, :destroy]
   # GET /invoices
   # GET /invoices.json
   def index
@@ -75,10 +76,12 @@ class InvoicesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_invoice
-      @invoice = current_user.is_admin ?
-        Invoice.find(params[:id])
-        :
-        current_user.invoices.find(params[:id])
+      if  current_user.is_admin
+        p "IS admin"
+        @invoice = Invoice.find(params[:id])
+      else
+        @invoice = current_user.invoices.find(params[:id])
+      end
     end
 
     # Only allow a list of trusted parameters through.

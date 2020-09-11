@@ -41,7 +41,7 @@ class Invoice < ApplicationRecord
   end
 
   def count_total
-    arr = invoice_fields.do do  |invoice_field|
+    arr = invoice_fields.map do |invoice_field|
       invoice_field.total = invoice_field.count_total
       invoice_field.total
     end

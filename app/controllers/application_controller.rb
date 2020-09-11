@@ -9,4 +9,8 @@ class ApplicationController < ActionController::Base
     # For additional in app/views/devise/registrations/edit.html.erb
     devise_parameter_sanitizer.permit(:account_update, keys: [:username])
   end
+
+  def authenticate_admin!
+    redirect_to invoices_url if current_user && !current_user.is_admin
+  end
 end

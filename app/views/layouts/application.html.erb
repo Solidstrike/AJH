@@ -21,7 +21,13 @@
     <% end %>
     <%= render 'shared/flashes' %>
     <div class="wrap">
-      <%= yield %>
+      <%- if devise_controller? %>
+        <div class="container">
+            <%= yield %>
+        </div>
+      <% else %>
+        <%= yield %>
+      <% end %>
     </div>
     <%= render 'shared/footer' %>
   </body>

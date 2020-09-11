@@ -40,6 +40,7 @@ class User < ApplicationRecord
    validates :last_name, presence: true 
 
   scope :not_admins, -> { where(is_admin: [false, nil])}
+  scope :admins, -> { where(is_admin: true)}
 
   def admin?
     is_admin
