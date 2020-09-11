@@ -256,7 +256,8 @@
   url: 'https://www.regents.ac.uk/'
   specialty: 'Education'
   employment_type: 'Full time'
-  headline: 'BA (Hons) International Business with French and a Focus in Management company_description: European Business School London was a private Business School in Regent`s Park in Central London. It was a constituent school of Regent`s College London, which became Regent`s University London in 2013.'
+  headline: 'BA (Hons) International Business with French and a Focus in Management'
+  company_description: 'European Business School London was a private Business School in Regent`s Park in Central London. It was a constituent school of Regent`s College London, which became Regent`s University London in 2013.'
   job_description: 'The BA program in International Business provides students with a unique opportunity to combine general business knowledge with in depth expertise in the field of specialization (finance, marketing or management and leadership). We strongly believe that a solid understanding of all business functions enables the graduates to take up managerial and specialist positions with better preparation. '
   starts_at: '2005-01-01'
   ends_at:

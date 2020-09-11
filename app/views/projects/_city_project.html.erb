@@ -1,1 +1,119 @@
-<%= city.capitalize %>
+<% if city.capitalize=="Paris" %>
+  <div class="col-sm-12 parawin">
+    <div class="parallax-window parallax-paris" >
+      <div class="city-p"><%=  city.titleize %></div>
+    </div>
+  </div>
+</div>
+<section>
+</section>
+<% elsif  city.capitalize=="London" %>
+  <div class="col-sm-12 parawin">
+    <div class="parallax-window parallax-london" >
+      <div class="city-p"><%=  city.titleize %></div>
+    </div>
+  </div>
+</div>
+<section>
+</section>
+<% elsif  city.capitalize=="Amsterdam" %>
+  <div class="col-sm-12 parawin">
+    <div class="parallax-window parallax-amsterdam" >
+      <div class="city-p"><%=  city.titleize %></div>
+    </div>
+  </div>
+</div>
+<section>
+</section>
+<% elsif  city.capitalize=="San Francisco" %>
+  <div class="col-sm-12 parawin">
+    <div class="parallax-window parallax-san" >
+      <div class="city-p"><%=  city.titleize %></div>
+    </div>
+  </div>
+</div>
+<section>
+</section>
+<% elsif  city.capitalize=="The Hague" %>
+  <div class="col-sm-12 parawin">
+    <div class="parallax-window parallax-hague" >
+      <div class="city-p"><%=  city.titleize %></div>
+    </div>
+  </div>
+</div>
+<section>
+</section>
+<% elsif  city.capitalize=="Berlin" %>
+  <div class="col-sm-12 parawin">
+    <div class="parallax-window parallax-berlin" >
+      <div class="city-p"><%=  city.titleize %></div>
+    </div>
+  </div>
+</div>
+<section>
+</section>
+<% else  city.capitalize=="Amstelveen" %>
+  <div class="col-sm-12 parawin">
+    <div class="parallax-window parallax-amstelveen" >
+      <div class="city-p"><%=  city.titleize %></div>
+    </div>
+  </div>
+</div>
+<section>
+</section>
+<% end %>
+<script>
+  $( document ).ready(function() {
+     $('.parallax-london').parallax({
+  imageSrc: "<%= cloudinary_url("photo-1505761671935-60b3a7427bad_z2hpmy.jpg") %>",
+  speed: 0.1
+  });
+  
+     $('.parallax-amsterdam').parallax({
+  imageSrc: "<%= cloudinary_url("photo-1534351590666-13e3e96b5017_mci8wv.jpg") %>",
+  speed: 0.1
+  });
+  
+    $('.parallax-paris').parallax({
+  imageSrc: "<%= cloudinary_url("photo-1502602898657-3e91760cbb34_atwgi4.jpg") %>",
+  speed: 0.1
+  });
+  
+    $('.parallax-san').parallax({
+  imageSrc: "<%= cloudinary_url("photo-1501594907352-04cda38ebc29_h938l0.jpg") %>",
+  speed: 0.1
+  });
+  
+    $('.parallax-hague').parallax({
+  imageSrc: "<%= cloudinary_url("photo-1586865645445-566d4571acb9_uma2ej.jpg") %>",
+  speed: 0.1
+  });
+  
+  $('.parallax-berlin').parallax({
+  imageSrc: "<%= cloudinary_url("photo-1560930950-5cc20e80e392_glmifq.jpg") %>",
+  speed: 0.1
+  });
+  
+  $('.parallax-amstelveen').parallax({
+  imageSrc: "<%= cloudinary_url("photo-1549701455-d0d42354b009_kltbvm.jpg") %>",
+  speed: 0.1
+  });
+  
+     });
+  
+     var images = document.getElementsByClassName('contact');
+  var changeFrom = 500; // from which amount of scroll do you want the effect to appear ?
+  
+  window.addEventListener('scroll', function() {
+  if (window.scrollY >= changeFrom ) {
+    [].forEach.call(images, function(image) {
+      image.classList.add('.parallax-window-color');
+    });
+  }
+  else {
+    [].forEach.call(images, function(image) {
+      image.classList.remove('.parallax-window-color');
+    });
+  }
+  });
+</script>
