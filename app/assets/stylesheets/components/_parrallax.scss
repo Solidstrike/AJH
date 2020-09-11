@@ -3,6 +3,18 @@
   background: transparent;
   z-index: 1;
   padding: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: -webkit-filter ease 1s;
+  transition: filter ease 1s;
+  transition: filter ease 1s, -webkit-filter ease 1s;
 }
 .parawin {
   height: auto;
@@ -15,4 +27,9 @@
 }
 .container-para {
   background: #001639;
+}
+.parallax-window:hover,
+.parallax-window {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
 }

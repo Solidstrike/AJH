@@ -17,9 +17,9 @@ User.destroy_all
 
 user_1 = User.create(first_name: 'Addison', last_name: 'Holbrook', email: "Addison@ajhconsulting.net", password: '123456')
 user_2 = User.create(first_name: 'Finance', last_name: 'AJH', email: "Finance@ajhconsulting.net", password: '123456')
-user_3 = User.create(first_name: 'Steve', last_name: 'Jobs', title: 'CEO', company:'Apple', email: "steve@apple.com", password: '123456')
-user_4 = User.create(first_name: 'Bill', last_name: 'Gates', title: 'CEO', company:'Microsoft', email: "Bill@microsoft.com", password: '123456')
-user_5 = User.create(first_name: 'Steve', last_name: 'Wozniak', title: 'Founder', company:'Apple', email: "wozniak@microsoft.com", password: '123456')
+user_3 = User.create(first_name: 'Steve', last_name: 'Lobs', title: 'CEO', company:'Mapple', email: "steve@apple.com", password: '123456')
+user_4 = User.create(first_name: 'Bill', last_name: 'Wates', title: 'CEO', company:'Nicrosoft', email: "bill@microsoft.com", password: '123456')
+user_5 = User.create(first_name: 'Kteve', last_name: 'Wozniak', title: 'Founder', company:'Mapple', email: "wozniak@microsoft.com", password: '123456')
 
 projects = YAML.load_file(Rails.root.join('db/lib/projects.yml')).map(&:deep_symbolize_keys)
 

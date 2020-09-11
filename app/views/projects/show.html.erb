@@ -1,4 +1,4 @@
-<div class="col-sm-12 banner-project">
+<div class="col-sm-12 banner-show">
   <h1><%= @project.company.titleize %> </h1>
   <h3><%= @project.city.titleize %> </h3>
   <div class="line-project">
@@ -19,12 +19,16 @@
     </p>
   </div>
   <div class="col-sm-6 company-logo">
-    <h1>><%= @project.image_company_logo %> </h1>
+    <% if  @project.image_company_logo.attached? %>
+      <%= cl_image_tag company_logo.attached.key, crop: :fill %>
+    <% else  %>
+      <%=  image_tag 'logo.GIF', crop: :fill %>
+    <% end %>
   </div>
 </div>
 <div class="col-sm-12 company-middle">
   <div class="col-sm-6 map">
-    <h1>MAP</h1>
+    <h1></h1>
   </div>
   <div class="col-sm-6 company-info">
     <p><%= @project.company_description %>
@@ -36,7 +40,11 @@
     <p><%= @project.job_description %>
     </p>
   </div>
-  <div class="col-sm-6 pic">
-    <h1>pic</h1>
+  <div class="col-sm-6 company-pic">
+    <% if @project.image.attached? %>
+      <%= cl_image_tag image.key  %>
+    <% else  %>
+      <%=  image_tag 'light.jpg'%>
+    <% end %>
   </div>
 </div>
