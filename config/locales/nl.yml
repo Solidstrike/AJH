@@ -1,0 +1,21 @@
+nl:
+  activerecord:
+    attributes:
+      invoice:
+        billing_date: Factuurdatum
+        number: Aantal
+        payment_date: Vervaldatum
+        tax: belasting
+        total: totaal
+        your_references: Uw referentie
+        user: Cliënt
+
+
+  form:
+    save: 'Sparen'
+    remove: 'Verwijderen'
+
+
+  total_without_tax: totaal zonder belasting
+  tax: belasting
+  total_with_tax: totaal met belasting

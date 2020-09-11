@@ -14,3 +14,7 @@ Or do it directly like  `docker-compose exec app rails c`
 If you use Docker-compose it wlll already setup  
 To able read sended email in development without docker install https://mailcatcher.me run & open http://localhost:1080  
 For production set server env varibles SMTP_SERVER, SMTP_PORT, DOMAIN, SMTP_EMAIL, SMTP_PASSSWORD
+
+
+### Rails Admin panel
+http://localhost:3000/admin sign in with defaults at seed.rb mail@example.com/password

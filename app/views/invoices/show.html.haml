@@ -1,0 +1,79 @@
+.container
+  .row
+    .col-12
+      .card
+        .card-body.p-0
+          .row.p-5
+            .col-md-6
+              = image_tag 'logo.png'
+            .col-md-6.text-right
+              %p.font-weight-bold.mb-1 Invoice #550
+              %p.text-muted Due to: 4 Dec, 2019
+          %hr.my-5/
+          .row.pb-5.p-5
+            .col-md-6
+              %p.font-weight-bold.mb-4 Client Information
+              %p.mb-1 John Doe, Mrs Emma Downson
+              %p Acme Inc
+              %p.mb-1 Berlin, Germany
+              %p.mb-1 6781 45P
+            .col-md-6.text-right
+              %p.font-weight-bold.mb-4 Payment Details
+              %p.mb-1
+                %span.text-muted VAT:
+                1425782
+              %p.mb-1
+                %span.text-muted VAT ID:
+                10253642
+              %p.mb-1
+                %span.text-muted Payment Type:
+                Root
+              %p.mb-1
+                %span.text-muted Name:
+                John Doe
+          .row.p-5
+            .col-md-12
+              %table.table
+                %thead
+                  %tr
+                    %th.border-0.text-uppercase.small.font-weight-bold ID
+                    %th.border-0.text-uppercase.small.font-weight-bold Item
+                    %th.border-0.text-uppercase.small.font-weight-bold Description
+                    %th.border-0.text-uppercase.small.font-weight-bold Quantity
+                    %th.border-0.text-uppercase.small.font-weight-bold Unit Cost
+                    %th.border-0.text-uppercase.small.font-weight-bold Total
+                %tbody
+                  %tr
+                    %td 1
+                    %td Software
+                    %td LTS Versions
+                    %td 21
+                    %td $321
+                    %td $3452
+                  %tr
+                    %td 1
+                    %td Software
+                    %td Support
+                    %td 234
+                    %td $6356
+                    %td $23423
+                  %tr
+                    %td 1
+                    %td Software
+                    %td Sofware Collection
+                    %td 4534
+                    %td $354
+                    %td $23434
+          .d-flex.flex-row-reverse.bg-dark.text-white.p-4
+            .py-3.px-5.text-right
+              .mb-2 Grand Total
+              .h2.font-weight-light $234,234
+            .py-3.px-5.text-right
+              .mb-2 Discount
+              .h2.font-weight-light 10%
+            .py-3.px-5.text-right
+              .mb-2 Sub - Total amount
+              .h2.font-weight-light $32,432
+  .text-light.mt-5.mb-5.text-center.small
+    by :
+    %a.text-light{:href => "http://totoprayogo.com", :target => "_blank"} totoprayogo.com

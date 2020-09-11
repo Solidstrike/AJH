@@ -1,0 +1,42 @@
+#invoce_form
+  = form_for @invoice, data: { remote: true } do |f|
+    - if @invoice.errors.any?
+      #error_explanation
+        %h2= "#{pluralize(@invoice.errors.count, "error")} prohibited this invoice from being saved:"
+        %ul
+          - @invoice.errors.full_messages.each do |message|
+            %li= message
+    .form-group
+      = f.label :billing_date
+      = f.date_select :billing_date, class: 'form-control'
+    .form-group
+      = f.label :payment_date
+      = f.date_select :payment_date, class: 'form-control', selected: Date.today + 7.days
+    .form-group
+      = f.label :your_references
+      = f.text_field :your_references, class: 'form-control'
+    .form-group
+      = f.label :user
+      = f.select :user_id, @clients.map { |user| [user.company ? user.company : user.full_name, user.id] }
+    .form-group
+      #invoice_fields
+        = f.simple_fields_for :invoice_fields do |invoice_field|
+          = render 'invoice_field_fields', f: invoice_field
+        .links
+          = link_to_add_association 'add invoice field', f, :invoice_fields
+    .form-row
+      .form-group.col-md-4
+        %p.total_without_tax
+          = t('total_without_tax')
+          %span.value
+          %span.euro €
+        %p.tax
+          = t('tax')
+          %span.value
+          %span.euro €
+        %p.total_with_tax
+          = t('total_with_tax')
+          %span.value
+          %span.euro €
+    .form-group
+      = f.submit t('form.save')
